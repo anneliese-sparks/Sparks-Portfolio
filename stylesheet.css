@@ -1,18 +1,49 @@
 body {
 
 	font-family: 'Montserrat', sans-serif;
+
 }
 
 h1 {
 
 	text-align: center;
-	font-family: 'Shrikhand', cursive;
+	font-family: 'Lora', sans-serif,
 
 }
 
-h3 {
-	font-family: arial;
+h2 {
 
+	font-family: Lora;
+
+}
+
+img {
+
+	height: 325px;
+	width: 450px;
+	border-radius: 20px;
+	box-shadow: 5px 5px #C0C0C0;
+
+}
+
+.images {
+
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
+}
+
+input {
+
+	width: 200px;
+	
+}
+
+textarea {
+	
+	width: 300px;
+	height: 400px;
 }
 
 a:hover {
@@ -21,29 +52,84 @@ a:hover {
 
 }
 
-p {
+p.first {
 
-	font-family: arial;
+	font-family: Montserrat;
+	font-size: 14px;
+	text-align: center;
+	box-sizing: border-box;
+	width: 50%;
+	border: 1px dotted #C0C0C0;
+	padding: 5px;
+	position: relative;
+	right: 25%;
+	left: 25%;
+
 }
 
-img {
-	border-radius: 20px;
-	box-shadow: 5px 5px #C0C0C0;
+p.second { 
+
+	font-family: Montserrat;
+	font-size: 14px;
+	font-style: italic;
+	text-align: center;
+	right: 25%;
+	left: 25%;
 }
 	
 
-#headernav {
+.headernav {
 
-	font-family: arial;
+	font-family: Montserrat;
 	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+
 }
 
 .form {
+
 	margin-left: auto;
 	margin-right: auto;
-	width:100px;
-	
+	width:300px;
+	border-style: solid;
+	border-color: #C0C0C0;
+	padding: 20px 20px;	
 }
 
+@media (max-width: 768px) {
 
+.images {
 
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+
+}
+
+img {
+
+	height: 278px;
+	width:380px;
+
+}
+
+.headernav {
+
+	font-family: Montserrat;
+	font-weight: bold;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-start;
+
+}
+
+}
+	
